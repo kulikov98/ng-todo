@@ -1,0 +1,7 @@
+<div class="add-todo">
+    <div class="add-todo__input-box">
+        <input (keyup.enter)="addTodo()" [(ngModel)]="title" [disabled]="pending" class="add-todo__input" type="text">
+        <fa-icon *ngIf="pending" class="add-todo--pending" [spin]="true" [icon]="faCircleNotch"></fa-icon>
+    </div>
+    <button (click)="addTodo()" [disabled]="pending" class="add-todo__btn">Add todo</button>
+</div>

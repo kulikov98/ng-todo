@@ -1,0 +1,13 @@
+<div *ngIf="!todo.placeholder; else placeholder"
+  [ngClass]="{ todo: true, 'todo--completed': todo.completed, 'todo--pending': pending }">
+  <input (change)="markComplete(todo)" [checked]="todo.completed" class="todo__checkbox" type="checkbox"
+    name="completed">
+  <p (click)="markComplete(todo)" [ngClass]="{ todo__title: true, 'todo__title--completed': todo.completed }">
+    {{ todo.title }}
+  </p>
+  <fa-icon (click)="deleteTodo(todo.id)" class="todo__delete" [icon]="faTimesCircle"></fa-icon>
+</div>
+
+<ng-template #placeholder>
+  <div class="placeholder"></div>
+</ng-template>

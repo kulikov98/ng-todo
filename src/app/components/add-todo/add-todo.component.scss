@@ -1,0 +1,47 @@
+.add-todo {
+    display: flex;
+    padding: 15px 20px;
+    margin-bottom: 5px;
+    background: #bdc3c7;
+    border-radius: 2px;
+
+    &__input-box {
+        position: relative;
+        flex-grow: 1;
+    }
+
+    &__input {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        padding: 0 15px;
+        border: none;
+        border-radius: 2px;
+
+        &:disabled {
+            background: #ecf0f1;
+        }
+    }
+
+    &--pending {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: #bdc3c7;
+    }
+
+    &__btn {
+        margin-left: 5px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 2px;
+        background: #2c3e50;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}

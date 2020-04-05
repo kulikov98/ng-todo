@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Todo list</h1>
+  <todo-item
+    *ngFor="let todo of todos; index as idx"
+    [index]="idx + 1"
+    [todo]="todo"
+    (onRemoveTodo)="removeTodo($event)">
+  </todo-item>
+</div>

@@ -1,0 +1,6 @@
+<div class="todo">
+  <p class="todo__title">
+    {{ index }}. {{ todo.title }}
+  </p>
+  <fa-icon (click)="deleteTodo(todo.id)" class="todo__delete" [icon]="faTimesCircle"></fa-icon>
+</div>

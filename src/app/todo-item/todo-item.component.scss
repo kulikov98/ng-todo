@@ -1,0 +1,23 @@
+todo-item.placeholder {
+  .todo {
+    background: red;
+  }
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: #eee;
+  margin-bottom: 5px;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__delete {
+    color: #ff4646;
+    cursor: pointer;
+  }
+}
